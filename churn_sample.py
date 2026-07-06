@@ -61,7 +61,7 @@ st.markdown("""
 # ------------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load(r"C:\Users\HASIM\Desktop\churn_prediction\best_model.pkl")
+    return joblib.load("best_model.pkl")
 
 try:
     model = load_model()
